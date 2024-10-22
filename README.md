@@ -21,13 +21,13 @@ pip install -r requirements.txt
 
 ### Create an .env File:
 #### Create a .env file in the root of your project and add your API key:
-```
+```sh
 API_KEY=your_google_generative_ai_api_key_here
 ```
 
 ### Run the Application:
 
-```
+```sh
 python app.py
 ```
 
