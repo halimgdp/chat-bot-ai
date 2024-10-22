@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>ChatGPT Style AI Chat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="chat-container">
+        <h1>Ask a Question</h1>
+        <form method="POST" id="chat-form">
+            <input type="text" id="query" name="query" placeholder="Enter your question here..." required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response" class="{% if response %}expanded{% endif %}">
+            {% if response %}
+            <p>{{ response | safe }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Expand the response box if there's content
+            const responseElement = document.getElementById('response');
+            if (responseElement && responseElement.textContent.trim() !== "") {
+                responseElement.classList.add('expanded');
+            }
+        });
+    </script>
+</body>
+</html>
