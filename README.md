@@ -1,5 +1,11 @@
 # Getting Started
 
+
+### Demo 
+
+https://github.com/user-attachments/assets/90774f73-646a-4343-8426-8f34afc53c77
+
+
 ### Clone the Repository:
 
 ```sh
@@ -31,6 +37,4 @@ API_KEY=your_google_generative_ai_api_key_here
 python app.py
 ```
 
-The application will be accessible at http://localhost:5000/.
-
-https://github.com/halimgdp/chat-bot-ai/blob/main/chatbot-ai-demo.mp4
+The application will be accessible at http://localhost:5000/
