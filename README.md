@@ -1,6 +1,4 @@
-Getting Started
-
-Installation Instructions
+# Getting Started
 
 ### Clone the Repository:
 
